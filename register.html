@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SWD 414 – Student Registration</title>
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <!-- Header -->
+      <div class="page-header">
+        <div class="badge">SWD 414 &mdash; Backend Development</div>
+        <h1>Student <span>Registration</span></h1>
+        <p>Create your account to get started</p>
+      </div>
+
+      <!-- Card -->
+      <div class="card">
+        <form action="register.php" method="POST">
+          <!-- First Name & Last Name -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first_name">First Name</label>
+              <input
+                type="text"
+                id="first_name"
+                name="first_name"
+                placeholder="e.g. Norah"
+                required />
+            </div>
+            <div class="form-group">
+              <label for="last_name">Last Name</label>
+              <input
+                type="text"
+                id="last_name"
+                name="last_name"
+                placeholder="e.g. Aburimen"
+                required />
+            </div>
+          </div>
+
+          <!-- Matric Number -->
+          <div class="form-group">
+            <label for="matric_num">Matric Number</label>
+            <input
+              type="text"
+              id="matric_num"
+              name="matric_num"
+              placeholder="e.g. HND24-01-04-0004"
+              required />
+          </div>
+
+          <!-- Password -->
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter a strong password"
+              required />
+          </div>
+
+          <!-- Confirm Password -->
+          <div class="form-group">
+            <label for="confirm_password">Confirm Password</label>
+            <input
+              type="password"
+              id="confirm_password"
+              name="confirm_password"
+              placeholder="Re-enter your password"
+              required />
+          </div>
+
+          <hr class="divider" />
+
+          <!-- Submit -->
+          <button type="submit" class="btn-submit">Register Account</button>
+        </form>
+      </div>
+
+      <p class="footer-note">
+        Already have an account? <a href="login.php">Sign in here</a>
+      </p>
+    </div>
+  </body>
+</html>

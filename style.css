@@ -1,0 +1,202 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body with linear gradient background (two colors) */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Page wrapper */
+.page-wrapper {
+    width: 100%;
+    max-width: 480px;
+}
+
+/* Header / Banner */
+.page-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.page-header .badge {
+    display: inline-block;
+    background: rgba(0, 212, 255, 0.15);
+    border: 1px solid rgba(0, 212, 255, 0.4);
+    color: #00d4ff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+}
+
+.page-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+.page-header h1 span {
+    color: #00d4ff;
+}
+
+.page-header p {
+    margin-top: 8px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+}
+
+/* Card */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px 36px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* Name row - two columns */
+.form-row {
+    display: flex;
+    gap: 16px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+/* Form group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 8px;
+}
+
+/* Input fields */
+.form-group input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    padding: 13px 16px;
+    color: #ffffff;
+    font-size: 0.95rem;
+    transition: border-color 0.25s, background 0.25s, box-shadow 0.25s;
+    outline: none;
+}
+
+.form-group input::placeholder {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.form-group input:focus {
+    border-color: #00d4ff;
+    background: rgba(0, 212, 255, 0.08);
+    box-shadow: 0 0 0 4px rgba(0, 212, 255, 0.12);
+}
+
+/* Submit button */
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #00d4ff, #0099cc);
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: opacity 0.25s, transform 0.2s, box-shadow 0.25s;
+    box-shadow: 0 6px 24px rgba(0, 212, 255, 0.3);
+}
+
+.btn-submit:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.45);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+/* Divider */
+.divider {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin: 24px 0 20px;
+}
+
+/* Footer note */
+.footer-note {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 0.82rem;
+    margin-top: 24px;
+}
+
+.footer-note a {
+    color: #00d4ff;
+    text-decoration: none;
+}
+
+.footer-note a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .card {
+        padding: 30px 22px;
+    }
+}
+/* Alert boxes */
+.alert {
+    border-radius: 12px;
+    padding: 18px 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.alert p { margin: 4px 0; font-size: 0.92rem; }
+.alert-sub { color: rgba(255, 255, 255, 0.705) !important; font-size: 0.82rem !important; }
+
+.alert-error {
+    background: rgba(255, 80, 80, 0.1);
+    border: 1px solid rgba(255, 80, 80, 0.3);
+    color: #ff6b6b;
+}
+.alert-success {
+    background: rgba(0, 212, 120, 0.12);
+    border: 1px solid rgba(0, 212, 120, 0.35);
+    color: #00d478;
+}
